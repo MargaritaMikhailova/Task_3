@@ -2,7 +2,7 @@ import pytest
 import allure
 
 from pages.login_page import LoginPage
-from data import *
+from data import Urls
 
 class TestLoginPage:
 

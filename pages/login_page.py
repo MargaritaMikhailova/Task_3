@@ -2,10 +2,10 @@ import random
 
 from selenium.webdriver.support import expected_conditions as EC
 
-from locators import *
+from locators import Parameter, Buttons, Pages, Links
 from pages.main_page import BasePage
 from helpers import random_string, extract_order_number
-from data import *
+from data import Urls
 
 
 class LoginPage(BasePage):

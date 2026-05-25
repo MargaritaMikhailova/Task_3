@@ -1,8 +1,7 @@
 import pytest
 import allure
 
-from pages.constructor_page import ConstructorPage
-from pages.login_page import LoginPage
+
 from data import Urls, Ingredients
 
 

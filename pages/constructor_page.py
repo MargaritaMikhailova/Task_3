@@ -1,7 +1,9 @@
+
+
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support import expected_conditions as EC
 
-from locators import *
+from locators import Pages, Buttons, Parameter
 from pages.main_page import BasePage
 from data import Ingredients, Urls
 from helpers import counter_by_ingredient, extract_order_number, ingredient_by_name
