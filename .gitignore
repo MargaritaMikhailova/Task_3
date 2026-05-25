@@ -24,6 +24,7 @@ ENV/
 .coverage
 .tox/
 target/
+allure-results/
 
 # Logs
 *.log
