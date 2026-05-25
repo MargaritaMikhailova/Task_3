@@ -12,14 +12,14 @@ class TestMainFunctional:
     def test_link_constructor_exist(self, driver, user, authorized_user, constructor_page, login_page):
         constructor_page.click_constructor_page()
 
-        assert driver.current_url == Urls.CONSTRUCTOR_PAGE
+        assert constructor_page.get_current_url_constructor_page() == Urls.CONSTRUCTOR_PAGE
 
     @allure.title('Проверка основного функционала')
     @allure.description('Проверить: переход по клику на "Лента заказов"')
     def test_link_order_exist(self, driver, user, authorized_user, constructor_page, login_page):
         constructor_page.click_order_page_button()
 
-        assert driver.current_url == Urls.ORDER_PAGE
+        assert constructor_page.get_current_url_constructor_page() == Urls.ORDER_PAGE
 
     @allure.title('Проверка основного функционала')
     @allure.description('Проверить: если кликнуть на элемент появится всплывающее окно с деталями')

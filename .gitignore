@@ -25,10 +25,11 @@ ENV/
 .tox/
 target/
 allure-results/
+allure_results
 
 # Logs
 *.log
 
 # System files
 .DS_Store
-Thumbs.db
+Thumbs.dballure-results/

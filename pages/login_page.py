@@ -150,3 +150,8 @@ class LoginPage(BasePage):
             return False
 
         return self.long_wait.until(order_number_ready)
+
+
+    @allure.step("Получение текущего URL")
+    def get_current_url_login_page(self):
+        return self.get_current_url_page()

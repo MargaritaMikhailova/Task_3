@@ -73,3 +73,7 @@ class OrderPage(BasePage):
             return get_counter() > initial_value
 
         self.long_wait.until(counter_grew)
+
+    @allure.step("Получение текущего URL")
+    def get_current_url_order_page(self):
+        return self.get_current_url_page()

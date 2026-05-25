@@ -108,3 +108,7 @@ class ConstructorPage(BasePage):
             return True
         except Exception:
             return False
+
+    @allure.step("Получение текущего URL")
+    def get_current_url_constructor_page(self):
+        return self.get_current_url_page()  

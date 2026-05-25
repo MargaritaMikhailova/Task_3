@@ -15,7 +15,7 @@ class TestLoginPage:
         login_page.wait_for_profile_page()
   
      
-        assert driver.current_url == Urls.USER_AUTH
+        assert login_page.get_current_url_login_page() == Urls.USER_AUTH
 
     @allure.title('Проверить Личный кабинет')
     @allure.description('Проверить: переход в раздел "История заказов"')
@@ -28,7 +28,7 @@ class TestLoginPage:
         login_page.history_order_page()
 
 
-        assert driver.current_url == Urls.HISTORY_ORDER
+        assert login_page.get_current_url_login_page() == Urls.HISTORY_ORDER
 
     @allure.title('Проверить Личный кабинет')
     @allure.description('Проверить: выход из аккаунта')
@@ -40,4 +40,4 @@ class TestLoginPage:
         login_page.logout_button_check()
 
 
-        assert driver.current_url == Urls.LOGIN_PAGE
+        assert login_page.get_current_url_login_page() == Urls.LOGIN_PAGE    

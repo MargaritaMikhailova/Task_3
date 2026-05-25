@@ -14,7 +14,7 @@ class TestOrderPageFunctional:
         order_page.open_first_order_in_feed()
         order_page.wait_for_order_detail()
 
-        assert f"{Urls.ORDER_PAGE}/" in driver.current_url
+        assert f"{Urls.ORDER_PAGE}/" in order_page.get_current_url_order_page()
 
     @allure.title('Проверка раздела "Лента заказов"')
     @allure.description('Проверить: заказы пользователя из раздела "История заказов"отображаются на странице "Лента заказов"')

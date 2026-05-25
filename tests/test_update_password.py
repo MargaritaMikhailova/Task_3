@@ -16,7 +16,7 @@ class TestUpdatePassword:
 
         login_page.click_link_update_password()
 
-        assert driver.current_url == Urls.FORGOT_PASSWORD
+        assert login_page.get_current_url_login_page() == Urls.FORGOT_PASSWORD
 
     
     @allure.title('Проверить страницу "Восстановления пароля"')
@@ -31,7 +31,7 @@ class TestUpdatePassword:
         
         login_page.update_button()
      
-        assert driver.current_url == Urls.RESET_PASSWORD
+        assert login_page.get_current_url_login_page() == Urls.RESET_PASSWORD    
 
     @allure.title('Проверить клик по кнопке показать\скрыть пароль')
     @allure.description('Проверить: клик по кнопке показать\скрыть пароль на странице "Вход"')

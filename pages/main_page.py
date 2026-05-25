@@ -86,5 +86,7 @@ class BasePage:
             target,
         )
     
+    def get_current_url_page(self) -> str:
+        return self.driver.current_url
 
 
